@@ -1,9 +1,28 @@
+.navbarContainer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.generalRoute {
+    display: flex;
+    position: absolute;
+
+}
+
+.authRoute {
+    position: absolute;
+    right: 0;
+}
+
 .link {
     text-decoration: none;
     color: #000;
     margin-right: 30px;
     box-shadow: inset 0 0 0 0 #54b3d6;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
 }
 
 .link:hover {
