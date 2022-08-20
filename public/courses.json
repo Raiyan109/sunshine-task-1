@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "React Course",
+        "img": "https://i.ibb.co/WkJyR5P/course-1.png",
+        "instructor": "Raiyan Kabir",
+        "price": 14.34
+    },
+    {
+        "id": 2,
+        "name": "HTML CSS Course",
+        "img": "https://i.ibb.co/Wtj8cs1/course-2.png",
+        "instructor": "Raiyan Kabir",
+        "price": 14.34
+    },
+    {
+        "id": 3,
+        "name": "Javascript Course",
+        "img": "https://i.ibb.co/k3vQpxT/course-3.png",
+        "instructor": "Raiyan Kabir",
+        "price": 14.34
+    },
+    {
+        "id": 4,
+        "name": "Node JS Course",
+        "img": "https://i.ibb.co/k3vQpxT/course-3.png",
+        "instructor": "Raiyan Kabir",
+        "price": 14.34
+    }
+]
