@@ -5,6 +5,7 @@ const Navbar = () => {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.generalRoute}>
+                <Link className={styles.link} to='/home'>Home</Link>
                 <Link className={styles.link} to='/about'>About Us</Link>
                 <Link className={styles.link} to='/courses'>Courses</Link>
                 <Link className={styles.link} to='/Contact'>Contact</Link>

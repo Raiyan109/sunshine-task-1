@@ -20,7 +20,14 @@ const Courses = () => {
         },
         {
             id: 3,
-            "name": "Hiker's Warehouse",
+            "name": "Javascript Course",
+            "img": "../../assets/images/course-3.png",
+            "instructor": "Raiyan Kabir",
+            "price": "14.34",
+        },
+        {
+            id: 4,
+            "name": "Node JS Course",
             "img": "../../assets/images/course-3.png",
             "instructor": "Raiyan Kabir",
             "price": "14.34",
