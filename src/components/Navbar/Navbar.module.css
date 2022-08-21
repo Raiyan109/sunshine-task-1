@@ -7,7 +7,7 @@
 .generalRoute {
     display: flex;
     position: absolute;
-
+    left: 40px;
 }
 
 .authRoute {

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    height: 400px;
+    background-color: #eee2dc;
+    position: absolute;
+    top: 1800px;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container .footerMain {
+    position: absolute;
+    left: 100px;
+    display: block;
+    width: 150px;
+    word-wrap: break-word;
+}
+
+.container .courses {
+    position: absolute;
+    right: 1000px;
+}
+
+.container .menu {
+    position: absolute;
+    right: 500px;
+}
+
+.container .about {
+    position: absolute;
+    right: 0;
+}
