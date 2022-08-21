@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import bannerImg from '../../assets/images/banner.jpg'
 import Stats from '../Stats/Stats';
 import Courses from '../Courses/Courses';
+import NewsLetter from '../NewsLetter/NewsLetter';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             </div>
             <Stats />
             <Courses />
+            <NewsLetter />
         </div>
     );
 };
