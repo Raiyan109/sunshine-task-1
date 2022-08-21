@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,6 +9,8 @@ import Loading from '../Loading/Loading';
 
 
 const Signup = () => {
+
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
@@ -21,19 +23,21 @@ const Signup = () => {
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+    const [users] = useState(user || gUser)
+
     const navigate = useNavigate()
 
     let signInError
 
-    if (loading || updating) {
+    if (loading || gLoading || updating) {
         return <Loading />
     }
-    if (error || updateError) {
-        signInError = <p className='text-red-500'><small>{error?.message || updateError?.message}</small></p>
+    if (error || gError || updateError) {
+        signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
-    if (user) {
-        navigate('/home')
+    if (users) {
+        navigate('/courses')
     }
 
     const onSubmit = async data => {
@@ -119,8 +123,18 @@ const Signup = () => {
                     </label>
                 </div>
 
+                {signInError}
+
                 <input className='' value='Sign up' type="submit" />
             </form>
+
+            <p><small>Already have an Account? <Link className='text-primary' to='/login'>PLease Login</Link></small></p>
+
+            <div className="divider">OR</div>
+            <button
+                onClick={() => signInWithGoogle()}
+                className="btn btn-outline"
+            >Continue with google</button>
         </div>
     );
 };
