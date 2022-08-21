@@ -4,6 +4,7 @@
     background: #eee2dc;
     margin-top: 80px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -26,4 +27,85 @@
     height: auto;
     position: absolute;
     top: 0;
+    right: 400px;
+}
+
+
+/*-----------------------------------------------------------------
+                              Media Quaries 
+ -------------------------------------------------------------------*/
+
+
+/*---------------------------
+  Mobile devices 
+  -------------------------*/
+
+@media only screen and (max-width:688px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    .container .bannerText {
+        /* position: static; */
+        top: 130px;
+        margin-left: 20px;
+        padding-bottom: 10px;
+        width: 500px;
+        height: 180px;
+    }
+
+    .container .bannerImg {
+        top: 330px;
+        left: 20px;
+    }
+
+    .container .bannerImg img {
+        /* position: static; */
+        width: 500px;
+        height: 300px;
+
+    }
+
+
+}
+
+
+
+
+
+/*----------------------
+ Tablet device 
+ ---------------------*/
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    .container .bannerText {
+        /* position: static; */
+        top: 130px;
+        margin-left: 20px;
+        padding-bottom: 10px;
+        width: 500px;
+        height: 180px;
+        left: 110px;
+    }
+
+    .container .bannerImg {
+        top: 330px;
+        left: 130px;
+    }
+
+    .container .bannerImg img {
+        /* position: static; */
+        width: 500px;
+        height: 300px;
+
+    }
 }

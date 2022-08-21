@@ -7,8 +7,8 @@ const Course = ({ course }) => {
         <div className={styles.container}>
             <img src={img} alt="" />
             <h1>{name}</h1>
-            <h3>{instructor}</h3>
-            <h2>{price}</h2>
+            <h3>Instructor : {instructor}</h3>
+            <h2>Price : {price}$</h2>
         </div>
     );
 };

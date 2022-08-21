@@ -31,3 +31,72 @@
     position: absolute;
     right: 0;
 }
+
+
+
+/*-----------------------------------------------------------------
+                              Media Quaries 
+ -------------------------------------------------------------------*/
+
+
+/*---------------------------
+  Mobile devices 
+  -------------------------*/
+
+@media only screen and (max-width:688px) {
+    .container {
+        top: 2700px;
+        height: 300px;
+    }
+
+    .container .footerMain {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .container .courses {
+        font-size: 10px;
+        right: 120px;
+    }
+
+    .container .menu {
+        font-size: 10px;
+        right: 250px;
+    }
+
+    .container .about {
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+
+
+/*----------------------
+ Tablet device 
+ ---------------------*/
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container .footerMain {
+        font-size: 13px;
+    }
+
+    .container .courses {
+        font-size: 13px;
+        right: 100px;
+    }
+
+    .container .menu {
+        font-size: 13px;
+        right: 200px;
+    }
+
+    .container .about {
+        font-size: 13px;
+    }
+
+}
